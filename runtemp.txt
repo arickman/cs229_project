@@ -1,0 +1,1 @@
+./Snap-4.1/examples/node2vec/node2vec -i:data/updated_amazon-meta-catlist-rankmin-edges.txt -o:results/updated_amazon-meta-min10krank_10_10_10_0.1_1.emd -d:10 -l:10 -r:10 -p:0.1 -q:1 -w

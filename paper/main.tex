@@ -1,0 +1,120 @@
+\documentclass[sigconf]{acmart}
+
+\usepackage{booktabs} % For formal tables
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{mathrsfs}
+\usepackage{subfig}
+\usepackage[official]{eurosym}
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+\newcommand{\alex}[1]{{\bf [Alex: #1]}}
+
+\newcommand{\nedge}{k}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\note}[1]{{{\textcolor{red}{#1}}}}
+\newcommand{\hide}[1]{}
+\newcommand{\xhdr}[1]{\vspace{1.7mm}\noindent{{\bf #1.}}}
+\newcommand{\casc}{{\mathbf{t}}}
+\newcommand{\alphs}{{\mathbf{A}}}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}{Lemma}
+\newcommand{\xsketch}{\noindent {\it Proof Sketch.}}
+\newcommand{\netinf}{{\textsc{Net\-Inf}}\xspace}
+\newcommand{\multitree}{{\textsc{Multi\-Tree}}\xspace}
+\newcommand{\netrate}{{\textsc{Net\-Rate}}\xspace}
+\newcommand{\connie}{{\textsc{Co\-nNIe}}\xspace}
+\newcommand{\maxinf}{{\textsc{Max\-Inf}}\xspace}
+\newcommand{\expo}{{\textsc{Exp}}\xspace}
+\newcommand{\pow}{{\textsc{Pow}}\xspace}
+\newcommand{\ray}{{\textsc{Ray}}\xspace}
+\newcommand{\eg}{\emph{e.g.}}
+\newcommand{\ie}{\emph{i.e.}}
+\newcommand{\unobs}{{\infty}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\E}{\mathbb{E}}
+%\newcommand{\bm}{\textbf{m}}
+\newcommand{\bm}{M}
+\newcommand\T{\rule{0pt}{2.6ex}}
+\newcommand\B{\rule[-1.2ex]{0pt}{0pt}}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\newtheorem{definition}{\textbf{Definition}}
+
+\graphicspath{{./FIG/}}
+
+\begin{document}
+\title{}
+
+
+
+\author{Alexander Friedman}
+\affiliation{\institution{Stanford University}}
+\email{@stanford.edu}
+
+
+\author{Alexandra Porter}
+\affiliation{\institution{Stanford University}}
+\email{amporter@stanford.edu}
+
+
+\author{Alexander Rickman}
+\affiliation{\institution{Stanford University}}
+\email{@stanford.edu}
+
+
+
+\begin{abstract}
+\input{000abstract}
+\end{abstract}
+
+
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+\input{010intro}
+
+
+
+\section{Methods}
+\input{030methods}
+
+\section{Experiments}
+\label{sec:experiments}
+\input{040experiments}
+
+%\section{Discussion}
+%\label{sec:discussion}
+%\input{050discussion}
+
+%\section{Conclusion}
+%\label{sec:conclusion}
+%\input{060conclusion}
+
+\bibliography{refs}
+\bibliographystyle{abbrv}
+
+%\appendix
+%\section{Appendix -- leftovers}
+%\label{sec:appendix}
+%\input{070appendix}
+
+\end{document}
